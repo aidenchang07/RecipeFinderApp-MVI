@@ -25,4 +25,10 @@ object MealApiClient {
         val response = apiClient.get(urlString = url).body() as MealResponse
         return response.meals
     }
+
+    suspend fun getSearchedRecipe(query: String): List<Meal> {
+        val url = "https://www.themealdb.com/api/json/v1/1/search.php?s=$query"
+        val response = apiClient.get(urlString = url) as MealResponse
+        return response.meals
+    }
 }
