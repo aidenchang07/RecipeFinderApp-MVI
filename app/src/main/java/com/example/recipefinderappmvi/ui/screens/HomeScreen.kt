@@ -3,6 +3,7 @@ package com.example.recipefinderappmvi.ui.screens
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import com.example.recipefinderappmvi.ui.components.LoadingComponent
+import com.example.recipefinderappmvi.ui.components.SuccessComponent
 import com.example.recipefinderappmvi.ui.viewmodel.RecipeViewIntent
 import com.example.recipefinderappmvi.ui.viewmodel.RecipeViewModel
 import com.example.recipefinderappmvi.ui.viewmodel.RecipeViewState
